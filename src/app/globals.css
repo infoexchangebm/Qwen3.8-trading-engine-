@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-pnl-up: #22c55e;
+  --color-pnl-down: #ef4444;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono), monospace;
+}
+
+/* Dark ops-console theme */
+.bg-console {
+  background-color: #0a0a0a;
+}
+
+.bg-console-elevated {
+  background-color: #111111;
+}
+
+.border-console {
+  border-color: #222222;
+}
+
+.text-pnl-up {
+  color: #22c55e;
+}
+
+.text-pnl-down {
+  color: #ef4444;
+}
+
+.text-muted {
+  color: #666666;
+}
+
+/* Mono numerals for financial data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+/* Table styles */
+.table-row-hover:hover {
+  background-color: #1a1a1a;
+}
+
+/* Conviction score gradient */
+.conviction-high {
+  color: #22c55e;
+}
+
+.conviction-medium {
+  color: #eab308;
+}
+
+.conviction-low {
+  color: #ef4444;
+}
